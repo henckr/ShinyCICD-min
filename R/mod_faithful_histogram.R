@@ -38,6 +38,8 @@ mod_faithful_histogram_ui <- function(id) {
 
 #' @rdname mod_faithful_histogram
 #'
+#' @param variable Reactive variable name
+#'
 #' @importFrom graphics hist
 mod_faithful_histogram_server <- function(input, output, session,
                                           variable = reactive(NULL)) {
